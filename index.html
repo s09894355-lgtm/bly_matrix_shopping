@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <title>BLY MATRIX | Online Store</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">BLY <span>MATRIX</span></a>
+    <form id="searchForm" class="search">
+      <input id="searchInput" type="search" placeholder="Search products..." aria-label="Search products">
+      <button type="submit">Search</button>
+    </form>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="index.html?page=wishlist">♡ Wishlist <span id="wishlistCount">0</span></a>
+      <a href="index.html?page=cart">Cart <span id="cartCount">0</span></a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div id="notice" class="notice" hidden></div>
+    <section id="homePage">
+      <div class="page-heading">
+        <div>
+          <p class="eyebrow">BLY MATRIX STORE</p>
+          <h1>Discover products you'll love</h1>
+          <p class="muted">Shop smart. Live better.</p>
+        </div>
+      </div>
+      <div id="categoryBar" class="category-bar"></div>
+      <div id="productGrid" class="product-grid">
+        <p class="muted">Loading products...</p>
+      </div>
+    </section>
+
+    <section id="detailPage" hidden></section>
+    <section id="wishlistPage" hidden>
+      <div class="section-title"><h1>My Wishlist</h1><a href="index.html">Continue shopping</a></div>
+      <div id="wishlistGrid" class="product-grid"></div>
+    </section>
+    <section id="cartPage" hidden>
+      <div class="section-title"><h1>Shopping Cart</h1><a href="index.html">Continue shopping</a></div>
+      <div id="cartContent"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">© <span id="year"></span> BLY MATRIX. All rights reserved.</footer>
+  <script src="app.js"></script>
+</body>
+</html>
